@@ -9,7 +9,9 @@ const PassoStack = props => {
           <Button
             title="Avançar"
             onPress={() => {
-              props.navigation.navigate(props.avancar);
+              props.navigation.push(props.avancar, {
+                number: Math.random() * 100,
+              });
             }}
           />
         </View>

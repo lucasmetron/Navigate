@@ -1,11 +1,12 @@
 import React from 'react';
-import {StyleSheet} from 'react-native';
 import TextoCentral from '../components/TextoCentral';
 
-const TelaC = () => {
-  return <TextoCentral corFundo="purple">Tela C</TextoCentral>;
+const TelaC = props => {
+  return (
+    <TextoCentral corFundo="purple">
+      Tela C - {props.route.params.number}
+    </TextoCentral>
+  );
 };
-
-const styles = StyleSheet.create({});
 
 export default TelaC;
