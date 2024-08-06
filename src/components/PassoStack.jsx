@@ -4,16 +4,28 @@ import {StyleSheet, View, Button} from 'react-native';
 const PassoStack = props => {
   return (
     <View style={styles.container}>
-      <View style={styles.ViewSmall}>
-        {props.avancar && (
+      {props.avancar && (
+        <View style={styles.ViewSmall}>
           <Button
             title="Avançar"
             onPress={() => {
               props.navigation.navigate(props.avancar);
             }}
           />
-        )}
-      </View>
+        </View>
+      )}
+
+      {props.voltar && (
+        <View style={styles.ViewSmall}>
+          <Button
+            title="Voltar"
+            onPress={() => {
+              props.navigation.goBack();
+            }}
+          />
+        </View>
+      )}
+
       <View style={styles.ViewBigger}>{props.children}</View>
     </View>
   );
