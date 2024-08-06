@@ -1,11 +1,15 @@
 import React from 'react';
 import {StyleSheet, SafeAreaView} from 'react-native';
-import TextoCentral from './components/TextoCentral';
+import TelaA from './views/TelaA';
+import TelaB from './views/TelaB';
+import TelaC from './views/TelaC';
 
 const App = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <TextoCentral>App</TextoCentral>
+      <TelaA />
+      <TelaB />
+      <TelaC />
     </SafeAreaView>
   );
 };

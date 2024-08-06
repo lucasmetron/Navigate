@@ -1,8 +1,9 @@
 import React from 'react';
-import {StyleSheet, View} from 'react-native';
+import {StyleSheet} from 'react-native';
+import TextoCentral from '../components/TextoCentral';
 
 const TelaA = () => {
-  return <View></View>;
+  return <TextoCentral corFundo="red">Tela A</TextoCentral>;
 };
 
 const styles = StyleSheet.create({});
